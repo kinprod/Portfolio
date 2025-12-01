@@ -7,7 +7,7 @@ sovietPanel.onclick = () => {
 };
 
 kerenskyPanel.onclick = () => {
-    window.location.href = "./KerenskyEscape/kerenskySite.html";
+    window.location.href = "../KerenskyEscape/kerenskySite.html";
 };
 
 roguelikePanel.onclick = () => {

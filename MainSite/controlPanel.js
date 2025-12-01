@@ -3,13 +3,13 @@ const kerenskyPanel = document.getElementById("kerensky");
 const roguelikePanel = document.getElementById("roguelike");
 
 sovietPanel.onclick = () => {
-    window.location.href = "../SovietVSLisards/index.html";
+    window.location.href = "../SovietVSLisards/soviet.html";
 };
 
 kerenskyPanel.onclick = () => {
-    window.location.href = "../KerenskyEscape/index.html";
+    window.location.href = "./KerenskyEscape/kerenskySite.html";
 };
 
 roguelikePanel.onclick = () => {
-    window.location.href = "../Roguelike game/index.html";
+    window.location.href = "../RoguelikeGame/roguelike.html";
 };

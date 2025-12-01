@@ -2,7 +2,7 @@ const mainUrl = document.getElementById("mainUrl");
 const github = document.getElementById("GitHub");
 
 mainUrl.onclick = () => {
-    window.location.href = "./MainSite/index.html";
+    window.location.href = "./MainSite/projects.html";
 };
 
 github.onclick = () => {

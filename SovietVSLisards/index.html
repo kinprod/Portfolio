@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Советы против ящериц</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="Logo">
+            Ластовкин Арсений
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li class="mainUrl" id="mainUrl">Проекты</li>
+            <li class="AboutMe" id="AboutMe">Обо мне</li>
+            <li class="GitHub" id="GitHub">GitHub</li>
+        </ul>
+        <script src="headerClick.js"></script>
+    </header>
+
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo" oncontextmenu="return false;">
+            <source src="./T.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="content">
+        <div class="content-block">
+            <img src="./indiehub.png" class="content-midea">
+            <div class="content-text">
+                <h2>Геймджем</h2>
+                <p>Изначально проект был сделан в рамках 7 дневного геймджема <a id="gamewar">Игровар</a>.
+                    Игра представляет из себя небольшое 5 минутное Demo с небольшим сюжетом о том, как сотрудник НКВД
+                    берется
+                    с внезапно мутировавшими крокодилами. Игра основана на рассказе Булгакова "Роковые яйца".
+                    <a id="gamewargame">Сайт игры</a>.
+                </p>
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="./2025-12-01_15-41-23.png" class="content-midea">
+            <div class="content-text">
+                <h2>Доработка</h2>
+                <p>После завершения геймджема поступило предложение доработать игру, чтобы можно было создать
+                    геймплейный трейлер.
+                    Появились новые локации, оружия ваги. Была доработаны механика взаимодействия с интерактивными
+                    объектами и синематики.</p>
+            </div>
+        </div>
+        <div class="content-block">
+            <video autoplay muted loop class="content-midea" oncontextmenu="return false;">
+                <source src="./Главный вариант.mp4" type="video/mp4">
+            </video>
+            <div class="content-text">
+                <h2>Конечный продукт</h2>
+                <p>
+                    Конечным продуктом является геймплейный трейлер.<br>
+                    <a id="gamedevru">Пост на gamedev.ru</a><br>
+                    <a id="youtube">Youtube</a><br>
+                    <a id="githubsoviet">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="urlScript.js"></script>
+    
+    <footer>
+        <div>
+            Это подвал сайла
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -7,7 +7,7 @@ mainUrl.onclick = () => {
 };
 
 aboutMe.onclick = () => {
-    window.location.href = "../About me/index.html";
+    window.location.href = "../index.html";
 };
 
 github.onclick = () => {

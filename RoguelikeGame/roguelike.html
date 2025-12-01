@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="top-nav">
         <div class="Logo">
@@ -23,10 +25,42 @@
         <script src="headerClick.js"></script>
     </header>
 
+    <div class="conteiner">
+        <div class="content">
+            <div class="content-media">
+                <img class="content-img" src="./Screenshot 2025-12-02 015321.png">
+                <img class="content-img" src="./Screenshot 2025-12-02 015558.png">
+                <img class="content-img" src="./Screenshot 2025-12-02 020829.png">
+            </div>
+            <div class="content-text">
+                <p class="text">Идея написании мини игры пришла спонтанно. Было очень скучно, а в библиотеке steam
+                    пусто, как и у многих.
+                    Поэтому я решил сделать быстренько свою игру.
+                    К томе же я давно не заходил в unity, стоило освежить память.</p>
+                <p class="text">Критерии для игры были просты:</p>
+                <p class="text"> ◽ Простой динамичный геймплей </p>
+                <p class="text"> ◽ Простое управление </p>
+                <p class="text"> ◽ Поддержка геймпада </p>
+                <p class="text">Под все эти критерии хорошо подходит рогалик. Я нашел несколько бесплатных ассетов с unity assets
+                    store и принялся за работу. Начал я с игрока. Сделал ему анимации, добавил управление используя new
+                    input system и поддержку геймпада.
+                    Я сделал oбводку следа от удара используя PolygonCollider2D (этот же способ я применил для создания
+                    Enemy), чтобы попадания были точными.
+                    Для описания логики врагов я использовал finite state machine (машину конечных автоматов) для
+                    описания перехода из состояния атаки в состояние преследования.
+                    В общей сложности игра была сделана за 2 дня.   
+                </p>
+                <p class="text"><a id="githubUrl">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="urlClick.js"></script>
+    
     <footer>
         <div>
             Это подвал сайла
         </div>
     </footer>
 </body>
+
 </html>

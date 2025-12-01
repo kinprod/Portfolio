@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Побег Керенского</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <div class="Logo">
+            Ластовкин Арсений
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li class="mainUrl" id="mainUrl">Проекты</li>
+            <li class="AboutMe" id="AboutMe">Обо мне</li>
+            <li class="GitHub" id="GitHub">GitHub</li>
+        </ul>
+        <script src="headerClick.js"></script>
+    </header>
+
+    <canvas id="canvas"></canvas>
+    <script type="module" src="Kerensky.js"></script>
+
+    <div class="content">
+        <div class="project-information">
+            <div class="project-text">
+                <p>Игра о побеге Керенского стала первым весомым опытом.</p>
+                <p>Игра представляет собой размышления о слухе, что <a id="kerensky">Керенский</a> бежал из Петрограда в платье.</p>
+                <p>Конечной целью этого проекта было создание видео-прохождения.</p>
+                <p><a id="githubUrl">GitHub</a></p>
+            </div>
+            <video autoplay muted loop class="project-video" oncontextmenu="return false;">
+                <source src="./KIRILL FINAL 480p.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <script src="kerenskyUrl.js"></script>
+
+    <footer>
+        <div>
+            Это подвал сайла
+        </div>
+    </footer>
+
+</body>
+
+</html>

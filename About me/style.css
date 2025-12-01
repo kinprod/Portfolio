@@ -1,0 +1,210 @@
+/* Подготовка шрифтов к использованию*/
+
+@font-face {
+    font-family: "berton-roman";
+    src: local("bertonroman"),
+        local("berton-roman"),
+        url("Fonts/BertonRoman/berton-roman.ttf") format("truetype");
+}
+
+@font-face {
+    /* Не работает с русским */
+    font-family: "crackhouse";
+    src: local("crackhouse"),
+        url("Fonts/Crackhouse\ Cyr/Crackhouse.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DXS";
+    src: local("DXS"),
+        url("Fonts/DXS\ Roco\ Pixel/dxs-roco-pixel.ttf") format("truetype");
+}
+
+@font-face {
+    /* Не работает с русским */
+    font-family: "MatrixC";
+    src: local("MatrixC"),
+        url("Fonts/MatrixC/Antimatrix-BWBVw.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oxygene";
+    src: local("Oxygene"),
+        url("Fonts/Oxygene\ 1\ RUS/Oxygene1_RUS_by_KanycTa.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TheCrewPro";
+    src: local("TheCrewPro"),
+        url("Fonts/TheCrewPro/TheCrewPro.ttf") format("truetype");
+}
+
+/*-----------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background:
+        linear-gradient(-45deg, #101010 0%, #292929 100%),
+        linear-gradient(45deg, #FB0505 0%, #8E00FB 20%);
+    background-blend-mode: multiply;
+}
+
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #1D1D1D 0%, #2F2F2F 100%);
+    color: #fff;
+    height: 50px;
+    padding: 1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
+
+.Logo {
+    font-family: "TheCrewPro";
+    font-size: 1.3rem;
+    color: aliceblue;
+    width: auto;
+    height: auto;
+}
+
+
+.GitHub,
+.mainUrl {
+    font-family: "TheCrewPro";
+    font-size: 1.3rem;
+    color: aliceblue;
+    width: 100px;
+    height: auto;
+}
+
+footer {
+    background: linear-gradient(45deg, #1D1D1D 0%, #2F2F2F 100%);
+    padding: 40px 5% 20px;
+    margin-top: auto;
+}

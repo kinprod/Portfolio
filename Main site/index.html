@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проекты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top-nav">
+    <div class="Logo">
+      Ластовкин Арсений
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li class="AboutMe" id="AboutMe">Обо мне</li>
+      <li class="GitHub" id="GitHub">GitHub</li>
+    </ul>
+    <script src="headerClick.js"></script>
+  </header>
+
+  <main>
+    <div class="ProjectList">
+      <div class="ProjectPanel" id="soviet">
+        <img src="./2025-11-30_21-14-56.png" class="ProjectImg">
+
+        <div class="glass">
+          <h2>
+            Советы против ящериц
+          </h2>
+          <p>
+            2.5 FPS шутер
+          </p>
+        </div>
+      </div>
+      <div class="ProjectPanel" id="kerensky">
+        <img src="./2025-11-30_21-11-18.png" class="ProjectImg">
+
+        <div class="glass">
+          <h2>
+            Побег Керенского
+          </h2>
+          <p>
+            2d визуальная новелла с элементами раннера
+          </p>
+        </div>
+      </div>
+      <div class="ProjectPanel" id="roguelike">
+        <img src="./2025-11-30_21-16-24.png" class="ProjectImg">
+
+        <div class="glass">
+          <h2>
+            Мини демо-игра
+          </h2>
+          <p>
+            2d roguelike
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="controlPanel.js"></script>
+
+  <footer>
+    <div>
+      Это подвал сайла
+    </div>
+  </footer>
+</body>
+
+</html>

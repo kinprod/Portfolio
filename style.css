@@ -283,3 +283,36 @@ footer {
         height: auto;
     }
 }
+
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.footer-contacts p,
+a {
+    font-family: "TheCrewPro";
+    font-size: large;
+}
+
+
+.footer-contacts p {
+    color: rgb(200, 208, 215);
+}
+
+.footer-contacts a {
+    color: #326a85;
+}
+
+.footer-contacts a:hover {
+    color: #442e81;
+}
+
+@media ((max-width: 1000px)) {
+    .footer-contacts {
+        flex-direction: column;
+    }
+}

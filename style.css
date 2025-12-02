@@ -208,3 +208,78 @@ footer {
     padding: 40px 5% 20px;
     margin-top: auto;
 }
+
+.myPhoto {
+    width: 25rem;
+    height: 30rem;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-text {
+    height: 60%;
+    background: rgba(150, 150, 150, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-text h2 {
+    font-family: "TheCrewPro";
+    color: aliceblue;
+    font-size: xx-large;
+    margin-top: 10px;
+}
+
+
+.content-text p {
+    font-family: "TheCrewPro";
+    color: aliceblue;
+    font-size: x-large;
+    margin-top: 10px;
+    display: flex;
+}
+
+.contacts {
+    font-family: "TheCrewPro";
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.contact {
+    color: #5eccff;
+}
+
+.contact:hover {
+    color: #895eff;
+}
+
+
+@media ((max-width: 1000px)) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-text {
+        height: auto;
+    }
+}

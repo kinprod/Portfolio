@@ -57,10 +57,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background:
-        linear-gradient(-45deg, #101010 0%, #292929 100%),
-        linear-gradient(45deg, #FB0505 0%, #8E00FB 20%);
+    background: linear-gradient(-45deg, #101010 0%, #292929 100%), linear-gradient(45deg, #FB0505 0%, #8E00FB 20%);
     background-blend-mode: multiply;
+    align-items: center;
 }
 
 
@@ -208,6 +207,7 @@ footer {
     background: linear-gradient(45deg, #1D1D1D 0%, #2F2F2F 100%);
     padding: 40px 5% 20px;
     margin-top: auto;
+    width: 100%;
 }
 
 .content {
